@@ -3,13 +3,13 @@
  * prints the alphabet, in lowercase, followed by a new line.
  * Return: No return
  */
-void print_alphabet(void) 
+void print_alphabet(void)
 {
-	char alphabet;
+	char c;
 
-	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar (alphabet);
+		_putchar (c);
 	}
 	_putchar('\n');
 }
