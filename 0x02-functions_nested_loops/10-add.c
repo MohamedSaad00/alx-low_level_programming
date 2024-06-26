@@ -5,7 +5,7 @@
 *@m:second integer
 *Return: returns 0
 */
-int add(int a, int b)
+int add(int n, int m)
 {
-	return (a + b);
+return (n + m);
 }
