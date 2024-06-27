@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* mul - to multiplies two integers
-* @c: The character to check.
-*
-* Return: 0
+*mul - function that multipliestwo numbers
+*@a: first number
+*@b: second number
+*Return: returns result
 */
 
 int mul(int a, int b)
