@@ -5,7 +5,6 @@
 *@b: second integer
 *Return: nothing
 */
-
 void swap_int(int *a, int *b)
 {
 	int num = *a;
