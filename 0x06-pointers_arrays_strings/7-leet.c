@@ -7,7 +7,8 @@
 
 char *leet(char *str)
 {
-    int index1 = 0, index2;
+    int index1 = 0;
+    int index2;
     char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
     while (str[index1])
@@ -18,7 +19,7 @@ char *leet(char *str)
                 str[index1] - 32 == leet[index2])
             {
                 str[index1] = index2 + '0';
-                break;
+                break;  /* Exit the inner loop once a match is found */
             }
         }
         index1++;
