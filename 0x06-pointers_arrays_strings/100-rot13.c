@@ -8,22 +8,20 @@
 
 char *rot13(char *str)
 {
-    int i, j;
-    char original[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-    char encoded[] =  "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int i, j;
+char original[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char encoded[] =  "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-    for (i = 0; str[i] != '\0'; i++)
-    {
-        for (j = 0; original[j] != '\0'; j++)
-        {
-            if (str[i] == original[j])
-            {
-                str[i] = encoded[j];
-                break;
-            }
-        }
-    }
-
-    return (str);
+for (i = 0; str[i] != '\0'; i++)
+{
+	for (j = 0; original[j] != '\0'; j++)
+	{
+	if (str[i] == original[j])
+	{
+	str[i] = encoded[j];
+	break;
+	}
+	}
 }
-
+return (str);
+}
