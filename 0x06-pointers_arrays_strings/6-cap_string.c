@@ -15,7 +15,7 @@ char *cap_string(char *str)
     {
         if (capitalize_next && (str[i] >= 'a' && str[i] <= 'z'))
         {
-            str[i] = str[i] - 32;
+            str[i] = str[i] - 32; /* Convert lowercase to uppercase */
             capitalize_next = 0;
         }
 
@@ -37,4 +37,3 @@ char *cap_string(char *str)
 
     return str;
 }
-
