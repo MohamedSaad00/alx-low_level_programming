@@ -11,17 +11,19 @@
 * one of the bytes in accept, or NULL if no such byte is found
 */
 
-char *_strpbrk (char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int i;
-	while(*s)
+
+	while (*s)
 	{
-		for(i = 0; accept[i]; i++)
+		for (i = 0; accept[i]; i++)
 		{
-			if(accept[i] == *s)
+			if (accept[i] == *s)
 				return (s);
 		}
 		s++;
 	}
+
 	return ('\0');
 }
