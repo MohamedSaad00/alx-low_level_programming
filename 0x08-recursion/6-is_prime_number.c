@@ -8,7 +8,7 @@
 */
 
 /**
-* is_prime_number - returns true if the number is prime
+*Function is_prime_number - returns true if the number is prime
 *@n: the number to check
 *
 *Return: true if the number is prime
