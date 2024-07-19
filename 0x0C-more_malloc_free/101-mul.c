@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 int find_len(char *str);
@@ -209,6 +211,11 @@ int main(int argc, char *argv[])
 	size = find_len(argv[1]) + find_len(argv[2]);
 	final_prod = create_xarray(size + 1);
 	next_prod = create_xarray(size + 1);
+
+	if (final_prod == NULL || next_prod == NULL) {
+		printf("Error\n");
+		exit(98);
+	}
 
 	for (index = find_len(argv[2]) - 1; index >= 0; index--)
 	{
