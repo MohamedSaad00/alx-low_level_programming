@@ -18,11 +18,9 @@ unsigned int i;
 
 va_start(li, n);
 
-	if (n != 0)
-	{
-	for (i = 0; i < n; i++)
-	sum += va_arg(li, int);
-	}
-	va_end(li);
-return (sum);
+for (i = 0; i < n; i++)
+sum += va_arg(li, int);
+
+va_end(li);
+return sum;
 }
