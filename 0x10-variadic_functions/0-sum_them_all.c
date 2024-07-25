@@ -3,11 +3,10 @@
 
 /**
 *sum_them_all - sums all its parameters
-*@n: The number of parameters 
-*passed to the function.
+*@n: first parameter
 *
-*Return: The sum of all parameters.
-*If n is 0, return 0. 
+*Return: 0 if n is null
+* or sum of parameters in other case
 */
 
 int sum_them_all(const unsigned int n, ...)
@@ -17,14 +16,15 @@ va_list li;
 int sum = 0;
 unsigned int i;
 
-	if (n == 0)
-	return (0);
+va_start(li, n);
 
-	va_start(li, n);
+if (n != 0)
+{
+for (i = 0; i < n; i++)
+sum += va_arg(li, int);
+}
 
-	for (i = 0; i < n; i++)
-	sum += va_arg(li, int);
+va_end(li);
+return (sum);
 
-	va_end(li);
-	return sum;
 }
